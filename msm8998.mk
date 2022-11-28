@@ -254,6 +254,10 @@ PRODUCT_PACKAGES += \
     libloc_core \
     liblocation_api
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
+    $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
