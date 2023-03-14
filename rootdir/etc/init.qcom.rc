@@ -114,6 +114,11 @@ on post-fs-data
     chown radio radio /data/vendor/radio/copy_complete
     chmod 0660 /data/vendor/radio/copy_complete
 
+on property:vold.decrypt=trigger_restart_framework
+    restart vendor.qcrild
+    exec /bin/sleep 2
+    restart vendor.qcrild2
+
 on early-boot
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
