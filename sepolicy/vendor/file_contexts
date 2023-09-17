@@ -5,6 +5,9 @@
 # DRM
 /(vendor|system/vendor)/bin/hw/android\.hardware\.drm@1\.1-service\.widevine u:object_r:hal_drm_widevine_exec:s0
 
+#Fastcharging
+/(vendor|system/vendor)/bin/hw/vendor\.lineage\.fastcharge@[0-9]\.[0-9]-service\.xiaomi	u:object_r:hal_lineage_fastcharge_default_exec:s0
+
 # Fingerprint
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.1-service\.xiaomi_msm8998 u:object_r:hal_fingerprint_default_exec:s0
 /dev/goodix_fp                                                u:object_r:fingerprint_device:s0

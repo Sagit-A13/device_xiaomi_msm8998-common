@@ -9,3 +9,6 @@ vendor_internal_prop(sensors_panel_prop)
 
 # Thermal engine
 vendor_internal_prop(thermal_prop)
+
+#Fastcharging
+vendor_internal_prop(vendor_fastcharge_prop)
